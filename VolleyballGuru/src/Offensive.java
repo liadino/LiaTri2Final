@@ -1,4 +1,3 @@
-import liaFinal.Player;
 
 public class Offensive extends Player
 	{

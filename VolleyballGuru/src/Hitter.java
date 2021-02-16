@@ -1,6 +1,4 @@
 
-import liaFinal.Offensive;
-
 public class Hitter extends Offensive
 	{
 protected  String spike;
@@ -26,8 +24,6 @@ System.out.println("We work with all the " + super.position);
 protected void getKill() {
 System.out.println("Way to go!");
 }
-}H
-
-public class Hitter {
-
 }
+
+

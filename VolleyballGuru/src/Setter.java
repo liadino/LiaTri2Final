@@ -1,13 +1,13 @@
 
 
-public class Defensive extends Player {
- 	protected boolean gainPoints;
-  protected boolean runPlays;
-  protected String categoryName = " defensive players "; 
+public class Setter extends Offensive {
+  protected boolean setHitters;
+  protected boolean decidePlays;
+  protected String categoryName = "setters "; 
 
 
-	private String purpose = " Prevent opponent from gaining points";
-  private String position = "Libero, Defensive Specialist";
+	private String purpose = " Decidse and execute the best plays for a situation";
+  private String position = "Setter";
 
 
 
@@ -32,5 +32,7 @@ public class Defensive extends Player {
 	protected void getPosition() {
 		System.out.println("Possible positions are: " + position);
 		System.out.println("We work with all the " + super.position);
-		}
+		
+	}
 }
+
