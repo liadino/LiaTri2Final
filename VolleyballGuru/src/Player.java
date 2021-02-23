@@ -14,7 +14,7 @@ protected abstract void getPosition();
 public void playVolleyball()
 {			 		
 System.out.print(intro + position);
-System.out.println(", we love volleyball!");
+System.out.println(", we play the game with a passion and work in specialized positions in order to get better!");
 }         
 }
 
