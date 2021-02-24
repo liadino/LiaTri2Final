@@ -12,30 +12,66 @@ public class inputGallery {
 
 
 	public static void basicQs() {
-		System.out.println(Main.role);
 
 		switch (Main.role) {
-		case 1: {
+		case 2: 
+			System.out.println("As a coach, it is your job to know where each player should be in a rotation and instruct the setter on what plays to run.");
+			System.out.println("Would you like to look at player rotations or plays to run first? \t (1) Rotations \t (2) Plays");
+			int rOp = Main.input.nextInt();
+			switch(rOp) {
+			case 1:
+				System.out.println("Select the position you would like to view rotations for: \t (1) Setter \t (2) Rightside \t (3) Middle \t (4) Outside \t (5) Defensive Specialist \t (6) Libero ");
+				int roPo = Main.input.nextInt();
+				switch(roPo) {
+				case 1:
+					Rotations.roSet();
+					break;
+				case 2:
+					Rotations.roRight();
+					break;
+				case 3:
+					Rotations.roMid();
+					break;
+				case 4:
+					Rotations.roOut();
+					break;
+				case 5:
+					Rotations.roDS();
+					break;
+				case 6:
+					Rotations.roLib();
+					break;
+				}
+				break;
+				
+			case 2: 
+				Plays.plays();
+				
+			}
+
+			break;
+		
+		case 1: 
 			Main.x = new Offensive();
 
 			Main.x.playVolleyball();
-		}
-		case 2: {
+			
 			System.out.println("Have you ever played volleyball before? \t (1)Yes \t (2) No");
 			int experience = Main.input.nextInt();
 			switch (experience) {
-			case 1: {
+			case 1: 
 				experienceQs();
 				break;
-			}
+			
 
-			case 2: {
+			case 2: 
 				basicInfo();
 
 				break;
+			
 			}
-			}
-		}
+			break;
+		
 		}
 	}
 
