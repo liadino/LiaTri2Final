@@ -54,6 +54,17 @@ public class Rotations {
 						+ " and are subbed back in to play front row: ");
 			}
 			System.out.println("\nOutsides always hit from Zone 4");
+			
+			System.out.println("\nWould you like to look at the possible plays for an Outside? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.sOplays();
+			}
+			else {
+				System.out.println(" ");
+			}
+			whileLoop();
+
 		}
 
 	}
@@ -73,9 +84,19 @@ public class Rotations {
 						+ " and are subbed back in to play front row  ");
 			}
 			System.out.println("\nMiddles always hit from Zone 3");
+			System.out.println("\nWould you like to look at the possible plays for a Middle? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.sMplays();
+			}
+			else {
+				System.out.println(" ");
+			}
 			whileLoop();
 
+
 		}
+		
 
 	}
 
@@ -94,8 +115,18 @@ public class Rotations {
 						+ " and are subbed back in to play front row:  ");
 			}
 			System.out.println("\nRightsides always hit from Zone 2");
+			
+			System.out.println("\nWould you like to look at the possible plays for a Rightside? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.sRplays();
+			}
+			else {
+				System.out.println(" ");
+			}
 
 			whileLoop();
+			
 		}
 
 	}
@@ -114,6 +145,15 @@ public class Rotations {
 			if (roNum == 5 || roNum == 6 || roNum == 4) {
 				System.out.println("Setters are subbed out by a Rightside Hitter when they get to rotation " + roNum
 						+ " and are subbed back in to play back row:  ");
+			}
+			
+			System.out.println("\nWould you like to look at the possible plays for a Setter? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.plays();
+			}
+			else {
+				System.out.println(" ");
 			}
 
 			whileLoop();
@@ -136,6 +176,14 @@ public class Rotations {
 						+ " and are subbed back in to play back row:  ");
 			}
 			System.out.println("\nLiberos will always pass from Zone 5");
+			System.out.println("\nWould you like to look at the possible plays for a Libero? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.slplays();
+			}
+			else {
+				System.out.println(" ");
+			}
 
 			whileLoop();
 		}
@@ -159,6 +207,14 @@ public class Rotations {
 			}
 
 			System.out.println("\nDefensive Specialists will always pass from Zone 6");
+			System.out.println("\nWould you like to look at the possible plays for a Defensive Specialist? (1) Yes (2) No");
+			int op = Main.input.nextInt();
+			if(op == 1) {
+				Plays.sDSplays();
+			}
+			else {
+				System.out.println(" ");
+			}
 
 			whileLoop();
 		}
@@ -265,6 +321,7 @@ public class Rotations {
 			newRo = true;
 		} else {
 			newRo = false;
+			System.out.println("See you next time!");
 
 		}
 	}

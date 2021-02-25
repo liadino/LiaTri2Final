@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class inputGallery {
 	private static int hOS;
+	private static int dOl;
+
 	private static int ofODe;
 	private static int exRole;
 	private static int exHit;
@@ -124,9 +126,11 @@ public class inputGallery {
 			switch(exDe) {
 			case 1: 
 				System.out.println("Let's go over the rotations for a Libero");
+				Rotations.roLib();
 				break;
 			case 2: 
 				System.out.println("Let's go over the rotations for a Defensive Specialist (DS)");
+				Rotations.roDS();
 				break;
 			}
 			break;
@@ -167,6 +171,9 @@ public class inputGallery {
 			Main.x.getPurpose();
 			System.out.println(" ");
 			Main.x.getPosition();
+			System.out.println("Would you like to be a (1) Libero or (2) Defensive Specialist");
+			dOl = Main.input.nextInt();
+			dOl();
 			break;
 
 		}
@@ -218,7 +225,30 @@ public class inputGallery {
 			
 			break;
 		}
+	}
+		public static void dOl() {
+			switch (dOl) {
+			
+			case 1:
+
+			
+					 System.out.println("Let's look at the rotations for Libero");
+					 Rotations.roLib();
+					 break;
+	
+				 
+
+			case 2:
+				
+				 System.out.println("Let's look at the rotations for Defensive Specialist");
+				 Rotations.roDS();
+				 break;
+
+				}
+
+				
+			}
 		
 	}
 
-}
+

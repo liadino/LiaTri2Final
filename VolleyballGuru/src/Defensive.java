@@ -6,8 +6,8 @@ public class Defensive extends Player {
   protected String categoryName = " defensive players "; 
 
 
-	private String purpose = " Prevent opponent from gaining points";
-  private String position = "Libero, Defensive Specialist";
+	protected String purpose = " Prevent opponent from gaining points";
+  protected String position = "Libero, Defensive Specialist";
 
 
 
